@@ -19,7 +19,7 @@
 ссылке [http://localhost:4173](http://localhost:4173)
 
 ```shell
-docker-compose -f docker-compose.yml up -d --build
+docker-compose --env-file .env -f docker-compose.yml up -d --build
 ```
 
 Развертывания проекта в докере. Для проверки работоспособности перейти по

@@ -6,12 +6,21 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      # Этот секрет будет доступен внутри `RUN --mount=type=secret...` в Dockerfile
+      secrets:
+        - SECRET_VITE_YMAP_API_KEY
     container_name: portfolio
     restart: unless-stopped
     ports:
       - "7070:8080"
     networks:
       - portfolio
+
+# https://docs.docker.com/compose/how-tos/use-secrets/
+secrets:
+  SECRET_VITE_YMAP_API_KEY:
+    # Создание secret на основе переменной окружения
+    environment: VITE_YMAP_API_KEY
 
 networks:
   portfolio:
