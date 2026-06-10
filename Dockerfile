@@ -4,7 +4,7 @@ COPY . /usr/app/
 RUN npm ci
 
 # https://docs.docker.com/build/ci/github-actions/secrets/
-RUN --mount=type=secret,id=SECRET_VITE_YMAP_API_KEY,env=SECRET_VITE_YMAP_API_KEY \
+RUN --mount=type=secret,id=SECRET_VITE_YMAP_API_KEY,env=VITE_YMAP_API_KEY \
     npm run build
 
 FROM nginxinc/nginx-unprivileged
