@@ -8,16 +8,15 @@ on:
     branches: [ "main" ]
 env:
   CR_URI: portfolio.cr.cloud.ru
-  VITE_YMAP_API_KEY: ${{ secrets.VITE_YMAP_API_KEY }}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to the branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v4
 
       - name: Log in to Evolution Artifact Registry
         uses: docker/login-action@v1
@@ -27,12 +26,14 @@ jobs:
           password: ${{ secrets.EVO_CR_PWD }}
 
       - name: Build and push docker image to Evolution Artifact Registry
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v7
         with:
           push: true
           tags: ${{ env.CR_URI }}/portfolio-app:latest
           file: ./Dockerfile
           context: .
+          secrets: |
+            SECRET_VITE_YMAP_API_KEY=${{ secrets.VITE_YMAP_API_KEY }}
 
     # Deploy to the environment
     environment:

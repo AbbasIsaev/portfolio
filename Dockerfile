@@ -2,7 +2,10 @@ FROM node:24-alpine as build
 WORKDIR /usr/app
 COPY . /usr/app/
 RUN npm ci
-RUN npm run build
+
+# https://docs.docker.com/build/ci/github-actions/secrets/
+RUN --mount=type=secret,id=SECRET_VITE_YMAP_API_KEY,env=SECRET_VITE_YMAP_API_KEY \
+    npm run build
 
 FROM nginxinc/nginx-unprivileged
 LABEL maintainer="Isaev Abbas"

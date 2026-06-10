@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio [![Node.js CI](https://github.com/AbbasIsaev/portfolio/actions/workflows/node.js.yaml/badge.svg)](https://github.com/AbbasIsaev/portfolio/actions/workflows/node.js.yaml)
 
 Структура проекта React + TypeScript + Vite + MaterialUI + Bootstrap + Plotly + Ymap3 + Workbox (PWA).
 
