@@ -7,7 +7,7 @@ import {manifest} from './manifest.ts'
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: '.',
+    base: './',
     plugins: [
         react(),
         svgr(),
