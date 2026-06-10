@@ -13,7 +13,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Источники данных',
                 remark: 'Интегрированная загрузка табличных данных из разных источников',
-                src: '/portfolio/ap/react/',
+                src: 'portfolio/ap/react/',
                 images: [
                     {name: '1-1 Источники данных.png'},
                     {name: '1-2-1 Источники данных Буфер.png'},
@@ -28,7 +28,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Маршруты',
                 remark: 'Расширенный функционал для работы с таблицами',
-                src: '/portfolio/ap/react/',
+                src: 'portfolio/ap/react/',
                 images: [
                     {name: '2-1-1 Маршруты.png'},
                     {name: '2-1-2 Фильтры.png'},
@@ -52,7 +52,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Отчеты и графики',
                 remark: 'Комплексный анализ данных с удобным UI и мощной аналитической базой',
-                src: '/portfolio/ap/react/',
+                src: 'portfolio/ap/react/',
                 images: [
                     {name: '2-3-1 Отчеты.png'},
                     {name: '2-3-2 Отчеты Модель классификации.png'},
@@ -71,7 +71,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Графический интерфейс администратора',
                 remark: 'Интерфейс администратора для управления данными в базе данных',
-                src: '/portfolio/ap/django/',
+                src: 'portfolio/ap/django/',
                 images: [
                     {name: '1-1 Панель администратора.png'},
                     {name: '1-2-1 Маршруты.png'},
@@ -90,7 +90,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Современный интерфейс информационной панели',
                 remark: 'Лаконичный и удобный дизайн системы',
-                src: '/portfolio/tr/react/',
+                src: 'portfolio/tr/react/',
                 images: [
                     {name: '1-1 Главная.png'},
                     {name: '2-1 Вход.png'},
@@ -120,7 +120,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Node.js (Express)',
                 remark: 'Поддержка RESTful API для обмена данными между клиентом и сервером',
-                src: '/portfolio/tr/node_js/',
+                src: 'portfolio/tr/node_js/',
                 images: [
                     {name: '1-1 Документирование кода.png'},
                     {name: '1-2 Документирование кода.png'},
@@ -132,7 +132,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Графический интерфейс администратора',
                 remark: 'Интерфейс администратора для управления данными в базе данных',
-                src: '/portfolio/tr/django/',
+                src: 'portfolio/tr/django/',
                 images: [
                     {name: '1-1 Вход в систему.png'},
                     {name: '1-2-1 Главная.png'},
@@ -159,7 +159,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Django REST Framework (DRF)',
                 remark: 'Поддержка RESTful API для обмена данными между клиентом и сервером',
-                src: '/portfolio/tr/django/',
+                src: 'portfolio/tr/django/',
                 images: [
                     {name: '8-1-1 Django REST.png'},
                     {name: '8-1-2 Django REST.png'},
@@ -173,7 +173,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Адаптивный интерфейс для мобильных устройств',
                 remark: 'Удобство использования на любом устройстве',
-                src: '/portfolio/tr/mobile/',
+                src: 'portfolio/tr/mobile/',
                 images: [
                     {name: '1-1 Главная.png'},
                     {name: '1-2 Установка.png'},
@@ -196,7 +196,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Кроссплатформенность (PWA и Workbox)',
                 remark: 'Работает на любых устройствах и ОС (iOS, Android, Windows и др.)',
-                src: '/portfolio/tr/pwa/',
+                src: 'portfolio/tr/pwa/',
                 images: [
                     {name: '3-1 Установка.png'},
                     {name: '11-1 Доступно обновление.png'},
@@ -206,7 +206,7 @@ export const portfolio: TPortfolio[] = [
             {
                 title: 'Бот "Цифровой контроль"',
                 remark: 'Автоматизация процесса мониторинга сотрудников на объекте',
-                src: '/portfolio/tr/telegram/',
+                src: 'portfolio/tr/telegram/',
                 images: [
                     {name: '1-1-1 Регистрация.png'},
                     {name: '1-1-2 Регистрация.png'},
@@ -225,14 +225,14 @@ export const portfolio: TPortfolio[] = [
                 title: 'django-command',
                 remark: 'Утилита для ускорения разработки на Django.',
                 href: DJANGO_COMMAND_URL,
-                src: '/portfolio/author/dc/',
+                src: 'portfolio/author/dc/',
                 images: [{name: 'Главная.gif'}]
             },
             {
                 title: 'modern-i18n',
                 remark: 'Библиотека упрощает внедрение многоязычности в проекты.',
                 href: MODERN_I18N_URL,
-                src: '/portfolio/author/mi/',
+                src: 'portfolio/author/mi/',
                 images: [{name: 'Главная.jpg'}]
             }
         ]
@@ -240,7 +240,7 @@ export const portfolio: TPortfolio[] = [
 ]
 
 export const logo: TLogo = {
-    src: '/logo/',
+    src: 'logo/',
     items: [
         {name: 'react.png', alt: 'react'},
         {name: 'redux-toolkit.png', alt: 'redux-toolkit'},
