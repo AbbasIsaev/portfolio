@@ -1,0 +1,7 @@
+export {Contact} from './Contact/Contact.tsx'
+export {Footer} from './Footer/Footer.tsx'
+export {Hero} from './Hero/Hero.tsx'
+export {Navigation} from './Navigation/Navigation.tsx'
+export {Portfolio} from './Portfolio/Portfolio.tsx'
+export {Resume} from './Resume/Resume.tsx'
+export {Skills} from './Skills/Skills.tsx'

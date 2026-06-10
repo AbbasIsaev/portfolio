@@ -1,0 +1,11 @@
+.carousel-app-dialog {
+    text-align: center;
+}
+
+.carousel-app-dialog img {
+    max-height: 90vh;
+}
+
+.carousel-app {
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.collapsable-list-button {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
+    color: var(--default-color);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.collapsable-list-button:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.collapsable-list-button:focus {
+    outline: none;
+    box-shadow: none;
+}
