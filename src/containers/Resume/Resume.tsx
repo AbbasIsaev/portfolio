@@ -18,13 +18,15 @@ export const Resume = () => {
     const data: Plotly.Data[] = useMemo(() => {
         const monthsBT = getMonthDiff(new Date('2021-07-30'), new Date('2017-04-21'))
         const yearsAndMonthsBT = getMonthsToYearsAndMonths(monthsBT)
-        const monthsNLMK = getMonthDiff(new Date(), new Date('2021-08-03'))
+        const monthsNLMK = getMonthDiff(new Date('2025-12-15'), new Date('2021-08-03'))
         const yearsAndMonthsNLMK = getMonthsToYearsAndMonths(monthsNLMK)
+        const monthsBTIng = getMonthDiff(new Date(), new Date('2026-03-01'))
+        const yearsAndMonthsBTIng = getMonthsToYearsAndMonths(monthsBTIng)
 
         return [{
-            values: [5 * 12 + 10, 6, 5, monthsBT, monthsNLMK],
-            text: ['5 лет, 10 мес.', '6 мес.', '5 мес.', yearsAndMonthsBT, yearsAndMonthsNLMK],
-            labels: ['МГТУ', 'Фирма Фавор', 'ВымпелКом', 'Бизнес Тренд', 'НЛМК'],
+            values: [5 * 12 + 10, 6, 5, monthsBT, monthsNLMK, monthsBTIng],
+            text: ['5 лет, 10 мес.', '6 мес.', '5 мес.', yearsAndMonthsBT, yearsAndMonthsNLMK, yearsAndMonthsBTIng],
+            labels: ['МГТУ', 'Фирма Фавор', 'ВымпелКом', 'Бизнес Тренд', 'НЛМК', 'БТ Инжиниринг'],
             textinfo: 'label',
             textposition: 'outside',
             hoverinfo: 'label+text',
@@ -77,13 +79,62 @@ export const Resume = () => {
                                         <div className="timeline-left">
                                             <h4 className="company">
                                                 <a
+                                                    href='https://www.biztrend.ru'
+                                                    target="_blank" rel="noreferrer"
+                                                >
+
+                                                    ООО "БТ Инжиниринг"
+                                                </a>
+                                            </h4>
+                                            <span className="period">2026 - н.в.</span>
+                                        </div>
+                                        <div className="timeline-dot"></div>
+                                        <div className="timeline-right">
+                                            <h3 className="position">Главный инженер-программист</h3>
+                                            <p className="description">
+                                                Развивал и модернизировал "Систему прослеживаемости".
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Актуализировал фронтенд стек: переход на Vite ускорил сборку в 2–3
+                                                    раза, обновление React
+                                                    до v19 и миграция на Redux Toolkit позволили сократить объём
+                                                    шаблонного кода и улучшить
+                                                    предсказуемость состояний
+                                                </li>
+                                                <li>
+                                                    Расширил пользовательскую доступность: внедрил интернационализацию с
+                                                    переключением между русским и английским языками — это расширило
+                                                    применимость
+                                                    системы в мультиязычной среде
+                                                </li>
+                                                <li>
+                                                    Обеспечил кросс платформенность бота: переписал Telegram бота под
+                                                    мессенджер Max без
+                                                    потери функционала
+                                                </li>
+                                                <li>
+                                                    Улучшил пользовательский опыт: обновил интеграцию с Yandex Maps,
+                                                    внедрил адаптивную
+                                                    вёрстку и ленивую загрузку компонентов — интерфейс стал быстрее и
+                                                    удобнее на разных
+                                                    устройствах.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                        <div className="timeline-left">
+                                            <h4 className="company">
+                                                <a
                                                     href='https://nlmk.com'
                                                     target="_blank" rel="noreferrer"
                                                 >
                                                     ПАО "НЛМК"
                                                 </a>
                                             </h4>
-                                            <span className="period">2021 - н.в.</span>
+                                            <span className="period">2021 - 2025</span>
                                         </div>
                                         <div className="timeline-dot"></div>
                                         <div className="timeline-right">
