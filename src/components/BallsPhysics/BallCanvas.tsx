@@ -24,7 +24,7 @@ export function BallCanvas() {
 
         LOGO_FILES.forEach((filename, index) => {
             const img = new Image()
-            img.src = `/logo/${filename}`
+            img.src = `logo/${filename}`
             img.onload = () => {
                 images[index] = img
                 loaded++
