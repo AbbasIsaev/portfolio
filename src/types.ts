@@ -15,13 +15,3 @@ export interface TPortfolio {
     filter: string
     items: PortfolioItem[]
 }
-
-interface LogoItem {
-    name: string
-    alt: string
-}
-
-export interface TLogo {
-    src: string
-    items: LogoItem[]
-}

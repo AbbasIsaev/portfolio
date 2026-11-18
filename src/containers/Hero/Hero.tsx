@@ -1,33 +1,8 @@
 import './Hero.css'
 
-import {useEffect, useState} from 'react'
-
-import {logo} from '../data.ts'
-import {animate, getPositions} from './animate.ts'
+import {BallCanvas} from '../../components/BallsPhysics'
 
 export const Hero = () => {
-    useEffect(() => {
-        const anim = animate('.hero-animated-img')
-
-        setTimeout(() => {
-            if (anim) {
-                anim.runAnimation()
-
-                // Отключаю анимацию через 1 минуту
-                setTimeout(() => {
-                    anim.stopAnimation()
-                }, 60000)
-            }
-        }, 5000)
-
-        return () => {
-            if (anim) {
-                anim.stopAnimation()
-            }
-        }
-    }, [])
-
-    const [positions] = useState(() => getPositions(logo.items.length))
 
     return (
         <section id="start" className="hero section">
@@ -69,23 +44,7 @@ export const Hero = () => {
 
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div className="hero-image">
-                            {logo.items.map((item, index) => (
-                                <img
-                                    key={index}
-                                    src={logo.src + item.name}
-                                    alt={item.alt}
-                                    className="img-fluid hero-animated-img"
-                                    style={{
-                                        position: 'absolute',
-                                        width: 'auto',
-                                        height: '30px',
-                                        left: `${positions[index]?.x || 50}%`,
-                                        top: `${positions[index]?.y || 50}%`
-                                    }}
-                                    data-aos="zoom-out"
-                                    data-aos-delay={300 + index * 100}
-                                />
-                            ))}
+                            <BallCanvas/>
 
                             <div className="shape-1"></div>
                             <div className="shape-2"></div>

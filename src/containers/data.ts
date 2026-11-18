@@ -1,6 +1,6 @@
 import type {LngLat} from '@yandex/ymaps3-types/common/types'
 
-import type {TLogo, TPortfolio} from '../types.ts'
+import type {TPortfolio} from '../types.ts'
 
 export const DJANGO_COMMAND_URL = 'https://habr.com/ru/articles/844938/'
 export const MODERN_I18N_URL = 'https://habr.com/ru/articles/926698/'
@@ -238,37 +238,6 @@ export const portfolio: TPortfolio[] = [
         ]
     }
 ]
-
-export const logo: TLogo = {
-    src: 'logo/',
-    items: [
-        {name: 'react.png', alt: 'react'},
-        {name: 'redux-toolkit.png', alt: 'redux-toolkit'},
-        {name: 'vite.png', alt: 'vite'},
-        {name: 'webpack.png', alt: 'webpack'},
-        {name: 'type-script.png', alt: 'type-script'},
-        {name: 'node-js.png', alt: 'node-js'},
-        {name: 'express-js.png', alt: 'express-js'},
-        {name: 'sequelize.png', alt: 'sequelize'},
-        {name: 'material-ui.png', alt: 'material-ui'},
-        {name: 'bootstrap.png', alt: 'bootstrap'},
-        {name: 'kendo-ui.png', alt: 'kendo-ui'},
-        {name: 'python.png', alt: 'python'},
-        {name: 'django.png', alt: 'django'},
-        {name: 'django-rest-framework.png', alt: 'django-rest-framework'},
-        {name: 'pandas.png', alt: 'pandas'},
-        {name: 'kafka.png', alt: 'kafka'},
-        {name: 'postgresql.png', alt: 'postgresql'},
-        {name: 'mysql.png', alt: 'mysql'},
-        {name: 'redis.png', alt: 'redis'},
-        {name: 'nginx.png', alt: 'nginx'},
-        {name: 'docker.png', alt: 'docker'},
-        {name: 'docker-compose.png', alt: 'docker-compose'},
-        {name: 'git.png', alt: 'git'},
-        {name: 'pwa.png', alt: 'pwa'},
-        {name: 'workbox.png', alt: 'workbox'}
-    ]
-}
 
 export const GEO_COORDS: LngLat = [37.617698, 55.755864]
 export const GEO_URL = 'https://yandex.ru/maps/geo/moskva/53000094/?ll=37.635249%2C55.746813&z=10'

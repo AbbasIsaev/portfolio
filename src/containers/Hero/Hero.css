@@ -97,21 +97,15 @@
 
 .hero .hero-image {
     position: relative;
-    padding: 2rem;
-    width: 100%;
+    width: 110%;
     height: 400px;
-}
-
-.hero .hero-image img {
-    position: relative;
-    z-index: 2;
 }
 
 .hero .hero-image .shape-1,
 .hero .hero-image .shape-2 {
     position: absolute;
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-    z-index: 1;
+    z-index: -1;
     filter: blur(10px); /* Лёгкое свечение */
     opacity: 0.4; /* Увеличена видимость */
     transition: transform 0.3s ease;
@@ -169,11 +163,4 @@
     opacity: 0.6;
     filter: blur(15px);
     animation-play-state: running;
-}
-
-.hero-animated-img {
-    user-select: none;
-    -webkit-user-select: none;
-    pointer-events: none;
-    z-index: 1;
 }
